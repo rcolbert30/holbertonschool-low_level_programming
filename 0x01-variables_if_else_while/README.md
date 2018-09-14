@@ -1,6 +1,6 @@
 # 0x01. C - Variables, if, else, while
 
-**In this project the following topics will be covered:**x
+**In this project the following topics will be covered:**
 
 * What are the arithmetic operators and how to use them
 * What are the logical operators (sometimes called boolean operators) and how to use them
