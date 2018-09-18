@@ -8,6 +8,13 @@
 
 int main(void)
 {
-	printf("Holberton\n");
+	char array[] = "Holberton";
+	int a;
+
+	for (a = 0; a <= 9; a++)
+	{
+		_putchar(array[a]);
+	_putchar('\n');
+	}
 	return (0);
 }
