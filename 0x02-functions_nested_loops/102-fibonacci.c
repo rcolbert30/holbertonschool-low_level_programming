@@ -10,6 +10,8 @@ int main(void)
 
 	nextTerm = t1 + t2;
 
+	printf("1, ");
+	printf("2, ");
 	for (n = 3; n <= 50; n++)
 	{
 		printf("%d, ",nextTerm);
