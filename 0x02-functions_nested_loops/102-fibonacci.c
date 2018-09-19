@@ -1,23 +1,23 @@
-#include <stdio.h>
-/**
- * main - prints the first 50 fibonacci numbers
- *
- * Return: 0
-*/
-int main(void)
-{
-	int t1 = 1, t2 = 2, nextTerm = 0, n;
-
-	nextTerm = t1 + t2;
-
-	printf("1, ");
-	printf("2, ");
-	for (n = 3; n <= 50; n++)
-	{
-		printf("%d, ",nextTerm);
-		t1 = t2;
-	 	t2 = nextTerm;
-		nextTerm = t1 + t2;
-	}
-	return 0;
-}
+#include <stdio.h> 
+  
+// Function to print first n Fibonacci Numbers 
+void printFibonacciNumbers(int n) 
+{ 
+    int f1 = 0, f2 = 1, i; 
+  
+    if (n < 1) 
+        return; 
+  
+    for (i = 1; i <= n; i++) 
+    { 
+        printf("%d, ", f2); 
+        int next = f1 + f2; 
+        f1 = f2; 
+        f2 = next; 
+    } 
+} 
+int main() 
+{ 
+    printFibonacciNumbers(50); 
+    return 0; 
+} 
