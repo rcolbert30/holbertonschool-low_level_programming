@@ -13,7 +13,7 @@ int main(void)
 	{
 		if (a % 3 == 0 || a % 15 == 0)
 		{
-			b+= a;
+			b += a;
 		}
 	}
 	printf("%d\n", b);
