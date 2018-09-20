@@ -4,7 +4,7 @@
  * print_numbers - prints 0 - 9
  * Return: 0
 */
-void print_numbers(void)
+void print_most_numbers(void)
 {
 	char a;
 
