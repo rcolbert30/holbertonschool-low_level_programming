@@ -15,7 +15,7 @@ int main(void)
 		else if (a % 5 == 0)
 			printf("Buzz ");
 		else if (a % 15 == 0)
-			printf("Fizz Buzz");
+			printf("FizzBuzz");
 		else
 			printf("%d ", a);
 	}
