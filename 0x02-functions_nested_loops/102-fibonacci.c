@@ -18,6 +18,6 @@ void printFibonacciNumbers(int n)
 } 
 int main() 
 { 
-    printFibonacciNumbers(50); 
+    printFibonacciNumbers(98); 
     return 0; 
 } 
