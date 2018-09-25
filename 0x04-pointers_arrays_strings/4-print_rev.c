@@ -25,7 +25,7 @@ void print_rev(char *s)
 {
 	int reverse;
 
-	for (reverse = _strlen(s) - 1; s[reverse] >= 0; reverse--)
+	for (reverse = _strlen(s) - 1; s[reverse] > 0; reverse--)
 	{
 		_putchar(s[reverse]);
 	}
