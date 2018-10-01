@@ -2,7 +2,7 @@
 #include "holberton.h"
 /**
  * _strspn - gets the length of a prefix substring
- * @s: initial segment 
+ * @s: initial segment
  * @accept: portion of string
  * Return: number of bytes in s that contains only bytes from accept
 */
