@@ -11,5 +11,5 @@ void print_diagsums(int *a, int size)
 	int kd;
 
 	for (kd = 0; a[kd] < size; kd++)
-	{
-		
+		;
+}
