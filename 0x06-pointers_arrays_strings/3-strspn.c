@@ -8,7 +8,7 @@
 */
 unsigned int _strspn(char *s, char *accept)
 {
-	int count, a;
+	int count, a, countMax;
 
 	for (count = 0; s[count] != '\0'; count++)
 	{
@@ -16,9 +16,14 @@ unsigned int _strspn(char *s, char *accept)
 		{
 			if (s[count] == accept[a])
 			{
-				;
+				countMax++;
+				break;
 			}
 		}
+		if (count != 0 && accept[a] == '\0')
+		{	
+			return (countMax);
+		}	
 	}
-	return (count);
+	return (0);
 }
