@@ -1,28 +1,21 @@
 !<arch>
-holberton.h/    1538855922  1000  1000  100664  699       `
-#ifndef HOLBERTON_H
-#define HOLBERTON_H
-
-int _putchar(char c);
-int _islower(int c);
-int _isalpha(int c);
-int _abs(int n);
-int _isupper(int c);
-int _isdigit(int c);
-int _strlen(char *s);
-void _puts(char *s);
-char *_strcpy(char *dest, char *src);
-int _atoi(char *s);
-char *_strcat(char *dest, char *src);
-char *_strncat(char *dest, char *src, int n);
-char *_strncpy(char *dest, char *src, int n);
-int _strcmp(char *s1, char *s2);
-char *_memset(char *s, char b, unsigned int n);
-char *_memcpy(char *dest, char *src, unsigned int n);
-char *_strchr(char *s, char c);
-unsigned int _strspn(char *s, char *accept);
-char *_strpbrk(char *s, char *accept);
-char *_strstr(char *haystack, char *needle);
-
-#endif
-
+0-isupper.o/    1538940482  1000  1000  100664  0         `
+0-memset.o/     1538940565  1000  1000  100664  0         `
+0-strcat.o/     1538940582  1000  1000  100664  0         `
+100-atoi.o/     1538940604  1000  1000  100664  0         `
+1-isdigit.o/    1538940589  1000  1000  100664  0         `
+1-memcpy.o/     1538940594  1000  1000  100664  0         `
+1-strncat.o/    1538940599  1000  1000  100664  0         `
+2-strchr.o/     1538940611  1000  1000  100664  0         `
+2-strlen.o/     1538940615  1000  1000  100664  0         `
+2-strncpy.o/    1538940619  1000  1000  100664  0         `
+3-islower.o/    1538940624  1000  1000  100664  0         `
+3-puts.o/       1538940633  1000  1000  100664  0         `
+3-strcmp.o/     1538940640  1000  1000  100664  0         `
+3-strspn.o/     1538940647  1000  1000  100664  0         `
+4-isalpha.o/    1538940651  1000  1000  100664  0         `
+4-strpbrk.o/    1538940655  1000  1000  100664  0         `
+5-strstr.o/     1538940660  1000  1000  100664  0         `
+6-abs.o/        1538940664  1000  1000  100664  0         `
+9-strcpy.o/     1538940676  1000  1000  100664  0         `
+_putchar.o/     1538940681  1000  1000  100664  0         `
