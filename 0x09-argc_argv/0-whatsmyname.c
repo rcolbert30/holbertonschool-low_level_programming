@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
  * main- prints name of the program
  * @argc: takes in string
@@ -8,11 +8,9 @@
  */
 int main(int argc, char *argv[])
 {
-	int k;
-
-	for (k = 0; k < argc; k++)
+	if (argc > 0)
 	{
-		printf("%s ", argv[k]);
+		printf("%s\n ", argv[0]);
 	}
 	return (0);
 }
