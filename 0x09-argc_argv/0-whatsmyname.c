@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "holberton.h"
 /**
  * main- prints name of the program
  * @argc: takes in string
