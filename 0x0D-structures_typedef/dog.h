@@ -1,5 +1,11 @@
 #ifndef _DOG_H
 #define _DOG_H
+/**
+ * struct dog - contains vital information for a given dog
+ * @name: dog name
+ * @age: dog age
+ * @owner: name of owner
+*/
 
 typedef struct dog
 {
