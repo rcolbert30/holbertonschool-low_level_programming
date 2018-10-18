@@ -13,10 +13,10 @@ int main(int argc, char **argv)
 	int (*champ)(int, int);
 
 	if (argv[2][1] != '\0')
-        {
-                printf("Error\n");
-                exit(99);
-        }
+	{
+		printf("Error\n");
+		exit(99);
+	{
 	if (argc != 4)
 	{
 		printf("Error\n");
