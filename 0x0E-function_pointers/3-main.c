@@ -12,12 +12,12 @@ int main(int argc, char **argv)
 	int sc, kd, calc;
 	int (*champ)(int, int);
 
-	if (argv[2][1] != '\0')
+	if (argv[2][1] != '\0') /* if the character is not null once were at this point then there is an error */
 	{
 		printf("Error\n");
 		exit(99);
 	}
-	if (argc != 4)
+	if (argc != 4) /* the argument count should != 4 becuase we have [0]./calc [1] 1 [2]+ [3] 1 */ 
 	{
 		printf("Error\n");
 		exit(98);
