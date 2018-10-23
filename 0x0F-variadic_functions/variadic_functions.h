@@ -1,5 +1,17 @@
 #ifndef VARIADIC_FUNCTIONS_H
 #define VARIADIC_FUNCTIONS_H
+#include <stdarg.h>
+/*
+ * struct operations - data structure
+ * @z: pointer
+ * @f: function pointer
+*/
+
+typedef struct operations
+{
+	char *z;
+	void (*f)();
+}operations_t;
 
 int sum_them_all(const unsigned int n, ...);
 
