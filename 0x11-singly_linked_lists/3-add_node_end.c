@@ -28,11 +28,11 @@ list_t *add_node_end(list_t **head, const char *str)
 	list_t *ptr;
 
 	if (!head)
-		return (NULL);
+		exit(1);
 
 	new_node = malloc(sizeof(list_t));
 	if (!new_node)
-		return (NULL);
+		exit(1);
 
 	new_node->str = strdup(str);
 	new_node->len = _strlen(str);
