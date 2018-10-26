@@ -27,29 +27,26 @@ list_t *add_node_end(list_t **head, const char *str)
         list_t *new_node;
 	list_t *ptr;
 
+	if (!head)
+		exit(1);
+
         new_node = malloc(sizeof(list_t));
         if (!new_node)
-        {
-                return (NULL);
-        }
+                exit(1);
+
         new_node->str = strdup(str);
-	if (!new_node->str)
-	{
-		free(new_node);
-		return(NULL);
-	}
 	new_node->len = _strlen(str);
-        if (!*head)
+        new_node->next = NULL;
+
+	if (!*head)
 	{
 		*head = new_node;
-		new_node->next = NULL;
+		return (*head);
 	}
-	ptr = *head;
 	while (ptr->next)
 	{
 		ptr = ptr->next;
-	}	
-	ptr = new_node;
-	new_node->next = NULL;
+	}
+	ptr->next = new_node;
         return (*head);
 }
