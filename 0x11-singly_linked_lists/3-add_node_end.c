@@ -9,14 +9,14 @@
 */
 int _strlen(const char *kd)
 {
-        int sc = 0;
+	int sc = 0;
 
-        while (kd[sc] != '\0')
-                sc++;
-        return (sc);
+	while (kd[sc] != '\0')
+		sc++;
+	return (sc);
 }
 /**
- * add_node - adds a new node to the beginning of a list_t list
+ * add_node_end - adds new node to the end of a list
  * @head: double pointer to head of list
  * @str: str pointer in list
  * Return: 0
@@ -24,19 +24,19 @@ int _strlen(const char *kd)
 
 list_t *add_node_end(list_t **head, const char *str)
 {
-        list_t *new_node;
+	list_t *new_node;
 	list_t *ptr;
 
 	if (!head)
 		exit(1);
 
-        new_node = malloc(sizeof(list_t));
-        if (!new_node)
-                exit(1);
+	new_node = malloc(sizeof(list_t));
+	if (!new_node)
+		exit(1);
 
-        new_node->str = strdup(str);
+	new_node->str = strdup(str);
 	new_node->len = _strlen(str);
-        new_node->next = NULL;
+	new_node->next = NULL;
 
 	if (!*head)
 	{
@@ -48,5 +48,5 @@ list_t *add_node_end(list_t **head, const char *str)
 		ptr = ptr->next;
 	}
 	ptr->next = new_node;
-        return (*head);
+	return (*head);
 }
