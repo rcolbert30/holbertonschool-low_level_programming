@@ -23,9 +23,9 @@ int create_file(const char *filename, char *text_content)
 		text_content = " ";
 
 	z = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
-	if (z == -1)
+	if (!z)
 		return (-1);
-	for (kd = 0; text_content[kd] != '\0'; z++)
+	for (kd = 0; text_content[kd] != '\0'; kd++)
 		;
 	if (write(z, text_content, kd) >= 0)
 	{
