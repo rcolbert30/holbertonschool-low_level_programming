@@ -43,5 +43,5 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	else
 		newElement->next = head;
 	ht->array[hashIndex] = newElement;
-	return(1);
+	return (1);
 }
