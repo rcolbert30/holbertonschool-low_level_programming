@@ -1,12 +1,8 @@
 #ifndef SORT_H
 #define SORT_H
 #include <stdio.h>
-
-/** prints an array of integers*/
-void print_array(const int *array, size_t size);
-/** prints list of integers*/
-void print_list(const listint_t *list);
-
+#include <stdlib.h>
+#include <stdbool.h>
 /**
  * struct listint_s - Doubly linked list node
  *
@@ -21,4 +17,17 @@ typedef struct listint_s
     struct listint_s *next;
 } listint_t;
 
+/** sorting functions */
+void bubble_sort(int *array, size_t size);
+void insertion_sort_list(listint_t **list);
+void selection_sort(int *array, size_t size);
+void quick_sort(int *array, size_t size);
 
+/** prints an array of integers*/
+void print_array(const int *array, size_t size);
+/** prints list of integers*/
+void print_list(const listint_t *list);
+/** swaps two integers*/
+void swap(int *xp, int *yp);
+
+#endif
