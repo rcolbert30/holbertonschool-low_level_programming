@@ -21,6 +21,7 @@ void bubble_sort(int *array, size_t size);
 void insertion_sort_list(listint_t **list);
 void selection_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
+void merge_sort(int *array, size_t size);
 
 /** prints an array of integers*/
 void print_array(const int *array, size_t size);
@@ -28,5 +29,10 @@ void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
 /** swaps two integers*/
 void swap(int *xp, int *yp);
+
+/** helper functions*/
+int partition(int *array, int low, int high, size_t size);
+void swap2(int *xp, int *yp, int *array, size_t size);
+void quick_sort_first(int *array, int low, int high, size_t size);
 
 #endif
