@@ -12,7 +12,7 @@ void quick_sort(int *array, size_t size)
 	quick_sort_first(array, 0, size - 1, size);
 }
 /**
- * quick_sort_first - where quicksort is happeneing, extra function to help
+ * quick_sort_first - helper function, does quicksort recursively
  * quick_sort function that takes in array and size
  * @array: array of integers
  * @size: size of an array
@@ -50,11 +50,12 @@ int partition(int *array, int low, int high, size_t size)
 
 	for (j = low; j < high; j++)
 	{
+		/** if current element is <= pivot*/
 		if (array[j] <= pivot)
 		{
 			if (i != j)
 				swap2(&array[i], &array[j], array, size);
-			i += 1;
+			i += 1;/**increment index of smaller element*/
 		}
 	}
 	if (high != i)
