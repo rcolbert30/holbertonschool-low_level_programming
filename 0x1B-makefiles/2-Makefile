@@ -1,0 +1,7 @@
+CC=gcc
+SRC= $(wildcard .c)
+OBJ= $(SRC:.c=.o)
+NAME=holberton
+
+$(NAME): $(OBJ)
+	$(CC) -o -I
