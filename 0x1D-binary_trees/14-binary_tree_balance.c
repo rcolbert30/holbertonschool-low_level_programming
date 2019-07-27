@@ -13,11 +13,11 @@ int binary_tree_balance(const binary_tree_t *tree)
 
 	lh = (binary_tree_balance(tree->left));
 	if (!tree->left)
-		lh -= 1;
+		lh --;
 
 	rh = (binary_tree_balance(tree->right));
 	if (!tree->right)
-		rh -= 1;
+		rh --;
 
 	return (lh - rh);
 }
